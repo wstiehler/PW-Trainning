@@ -1,3 +1,3 @@
 class Categoria:
     nome = ''
-    descricao = ''
+    descricao = ''  

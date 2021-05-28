@@ -1,0 +1,7 @@
+teste5,d,d,d,dd,d,d
+teste6,s,s,s,s,s,s
+teste6,s,s,s,ss,s,s
+teste7,s,s,s,s,s,s
+teste,a,a,a,a,a,a
+d,d,d,d,d,d,d
+s,s,s,s,s,s,s
