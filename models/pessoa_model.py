@@ -1,10 +1,12 @@
 
-class Model:
+class PessoaModel:
 
 
-    def __init__(self):
-        pass
-
+    def __init__(self, nome, sobrenome, idade, sexo):
+        self.nome = nome
+        self.sobrenome = sobrenome
+        self.idade = idade
+        self.sexo = sexo
 
     def cadastro(nome, sobrenome, idade, sexo):
         with open('db.txt', 'a') as arquivo:
