@@ -1,6 +1,6 @@
 import sys, os
 sys.path.append(os.getcwd)
-
+from pprint import pprint
 from models.exemplo2 import Endereco
 
 
@@ -15,4 +15,4 @@ pais = input('Informe o pais: ')
 
 endereco = Endereco(logradouro, numero, cep, bairro, cidade, estado, pais)
 endereco.cadastro()
-print(endereco.endereco_resumido())
+pprint(endereco.endereco_resumido())
