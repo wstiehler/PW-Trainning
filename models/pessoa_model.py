@@ -8,6 +8,9 @@ class PessoaModel:
         self.idade = idade
         self.sexo = sexo
 
+    def __str__(self, nome, sobrenome, idade, sexo) -> str:
+        return f'{nome},{sobrenome},{idade},{sexo}'
+
     def cadastro(nome, sobrenome, idade, sexo):
         with open('db.txt', 'a') as arquivo:
             arquivo.write(f'{nome}, {sobrenome}, {idade}, {sexo}\n') 
@@ -24,6 +27,7 @@ class PessoaModel:
                 pessoa = {'nome':dados[0], 'sobrenome':dados[1], 'idade':dados[2], 'sexo':dados[3]}
                 lista.append(pessoa)
         return lista
+
 
 dicionario = {'nome': '', 'sobrenome': '', 'idade': 0, 'sexo':''}
 
